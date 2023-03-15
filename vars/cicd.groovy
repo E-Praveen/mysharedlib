@@ -4,7 +4,7 @@ def newGit(repo)
 }
 def newMaven()
 {
-  mvn 'package' 
+  sh mvn 'package' 
 }
 def newDeploy(jobname,ip,appname)
 {
@@ -14,4 +14,3 @@ def runSelenium(jobname)
 {
   sh "java -jar /home/ubuntu/.jenkins/workspace/${jobname}/testing.jar"
 }
-  
